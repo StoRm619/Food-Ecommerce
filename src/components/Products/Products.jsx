@@ -3,8 +3,8 @@ import { Grid } from '@material-ui/core';
 import Product from './Product/Product';
 
 const products = [
-    { id: 1, name: 'Steak', description: '10oz Ribeye', price: '$20' },
-    { id: 2, name: 'Ice Cream', description: 'Cookie and Cream', price: '$5' }
+    { id: 1, name: 'Steak', description: '10oz Ribeye', price: '$20', image: 'https://embed.widencdn.net/img/beef/ng96sbyljl/800x600px/Ribeye%20Steak_Lip-on.psd?keep=c&u=7fueml' },
+    { id: 2, name: 'Ice Cream', description: 'Cookie and Cream', price: '$5', image: 'https://domesticallyblissful.com/wp-content/uploads/2020/07/Double-Stuffed-Oreo-Ice-Cream.jpg' }
 ]
 
 const Products = () => {
