@@ -23,7 +23,7 @@ const AddressForm = ({ checkoutToken }) => {
     }
 
     useEffect(() => {
-        console.log(checkoutToken)
+
         if (checkoutToken && checkoutToken.id) fetchShippingCountries(checkoutToken.id)
     }, []);
 
