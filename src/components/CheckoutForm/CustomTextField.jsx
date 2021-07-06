@@ -9,13 +9,15 @@ const FormInput = ({ name, label }) => {
     return (
         <Grid item xs={12} sm={6}>
             <Controller
-                render={({ field: { onChange, onBlur, value, ref } }) => (
+                name={name}
+                render={({ field }) => (
                     <TextField
-                        name={name}
                         control={control}
+                        required
                         label={label}
+                        {...field}
                         fullWidth
-                        required />
+                    />
                 )}
 
 
