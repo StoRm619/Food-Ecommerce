@@ -43,7 +43,7 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
         <>
             <Review checkoutToken={checkoutToken} />
             <Divider />
-            <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method</Typography>
+            <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method (Test Card: spam 42 until you cant anymore)</Typography>
             <Elements stripe={stripePromise}>
                 <ElementsConsumer>{({ elements, stripe }) => (
                     <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
